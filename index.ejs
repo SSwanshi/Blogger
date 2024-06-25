@@ -1,0 +1,62 @@
+<%- include("partials/header.ejs") %>
+<div class="box1">
+    <div class="profile">
+        <div class="profile_image">
+            <p>Hi, I'm Sarvjeet</p>
+        </div>
+    </div>
+    <div class="form_container">
+        <h2 class="form__heading">Add New Post</h2>
+        <form id="form" class="form" action="/add-post" method="POST">
+            <input id="title" type="text" placeholder="Title" name="title" required>
+            <textarea id="body" name="body" placeholder="Content" rows="5" required></textarea>
+            <input id="submitBtn" type="submit" value="Add" class="button-add">
+        </form>
+
+
+    </div>
+    </div>
+
+    <section class="blogs">
+        <span class="form__heading">
+            <p>
+            <h1><br>Checkout Other Posts :-</h1>
+            </p>
+        </span>
+        <ul class="articles">
+
+            <% posts.forEach(function(post) { %>
+                <li>
+                    <a href="/post1" class="article_heading">
+                        <span class="seemit">
+                            <%= post.title %>
+                        </span>
+                    </a>
+                </li>
+                <hr>
+                <% }); %>
+
+            <div>
+                <br>
+                <a href="/mypost1" class="article_heading" class="seemit">Machine Learning Optimization with Optuna</a>  
+                <hr>
+                <br>
+                <a href="/mypost2" class="article_heading">The Internet: Connecting the World and Revolutionizing Communication</a>
+                <hr>
+                <br>
+                <a href="/mypost3" class="article_heading">ChatGPT: Revolutionizing Conversational AI with Language Understanding</a> 
+                <hr>
+                <br>
+                <a href="/mypost4" class="article_heading">JavaScript: Empowering Dynamic and Interactive Web Experiences</a>
+                <hr>
+                <br>
+                <a href="/mypost5" class="article_heading">Van Gogh: A Visionary Artist's Journey of Expression and Emotion</a> 
+                <br>
+                <br>
+
+            </div>
+        </ul>
+    </section>
+    </div>
+
+    <%- include("partials/footer.ejs") %>

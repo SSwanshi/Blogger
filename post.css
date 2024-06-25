@@ -1,0 +1,16 @@
+.bigbox {
+    height: auto;
+    width: 1100px;
+    display:block;
+    background-color: #0F0F0F;
+    box-shadow: white 0 0 10px 5px;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 25px;
+    color: white;
+  }
+
+.learning{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5rem;
+}
